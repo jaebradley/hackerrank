@@ -18,7 +18,11 @@ public class HackerRankInAString {
   public static boolean containsHackerRankSubSequence(String s) {
     Stack<Character> hackerRankCharacters = Utilities.toStackInReverseOrder(HACKER_RANK);
     for (char c : s.toLowerCase().toCharArray()) {
-      if (!hackerRankCharacters.empty() && hackerRankCharacters.peek() == c) {
+      if (hackerRankCharacters.empty()) {
+        return true;
+      }
+
+      if (hackerRankCharacters.peek() == c) {
         hackerRankCharacters.pop();
       }
     }

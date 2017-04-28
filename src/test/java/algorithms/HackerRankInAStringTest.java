@@ -15,4 +15,9 @@ public class HackerRankInAStringTest {
   public void testMatch() {
     assertTrue(HackerRankInAString.containsHackerRankSubSequence(HackerRankInAString.HACKER_RANK));
   }
+
+  @Test
+  public void testEmptyEarlyExist() {
+    assertTrue(HackerRankInAString.containsHackerRankSubSequence(HackerRankInAString.HACKER_RANK + HackerRankInAString.HACKER_RANK));
+  }
 }
