@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class GreatestConsecutiveCharactersCounterImpl implements GreatestConsecutiveCharactersCounter {
   @Override
-  public Map<Character, Long> getGreatestConsecutiveCharacterCounts(String s) {
+  public Map<Character, Long> getGreatestConsecutiveCharacterCounts(final String s) {
     if (s.isEmpty()) {
       return new HashMap<>();
     }
