@@ -12,8 +12,8 @@ public class UniformSubStringWeightsFetcherImpl implements UniformSubStringWeigh
   private final AlphabeticalCharacterWeightCalculator alphabeticalCharacterWeightCalculator;
   private final GreatestConsecutiveCharactersCounter greatestConsecutiveCharactersCounter;
 
-  public UniformSubStringWeightsFetcherImpl(AlphabeticalCharacterWeightCalculator alphabeticalCharacterWeightCalculator,
-                                            GreatestConsecutiveCharactersCounter greatestConsecutiveCharactersCounter) {
+  public UniformSubStringWeightsFetcherImpl(final AlphabeticalCharacterWeightCalculator alphabeticalCharacterWeightCalculator,
+                                            final GreatestConsecutiveCharactersCounter greatestConsecutiveCharactersCounter) {
     this.alphabeticalCharacterWeightCalculator = alphabeticalCharacterWeightCalculator;
     this.greatestConsecutiveCharactersCounter = greatestConsecutiveCharactersCounter;
   }
@@ -25,7 +25,7 @@ public class UniformSubStringWeightsFetcherImpl implements UniformSubStringWeigh
     for (Map.Entry<Character, Long> entry : consecutiveCharacterCounts.entrySet()) {
       if (entry.getValue() != null && entry.getKey() != null) {
         long weight = this.alphabeticalCharacterWeightCalculator.calculate(entry.getKey());
-        for (long i = 0; i < entry.getValue() + 1; i++) {
+        for (long i = 1; i < entry.getValue() + 1; i++) {
           weights.add(weight * i);
         }
       }
