@@ -2,6 +2,8 @@ package algorithms.utilities;
 
 import algorithms.interfaces.GreatestCommonDivisorCalculator;
 
+import java.util.List;
+
 public class GreatestCommonDivisorCalculatorImpl implements GreatestCommonDivisorCalculator {
   @Override
   public long calculateGreatestCommonDivisor(final long a, final long b) {
@@ -25,5 +27,16 @@ public class GreatestCommonDivisorCalculatorImpl implements GreatestCommonDiviso
     }
 
     return first;
+  }
+
+  @Override
+  public long calculateGreatestCommonDivisor(final List<Long> values) {
+    if (values.size() < 2) {
+      throw new RuntimeException("No values");
+    }
+
+    return values.stream()
+            .reduce(this::calculateGreatestCommonDivisor)
+            .get();
   }
 }

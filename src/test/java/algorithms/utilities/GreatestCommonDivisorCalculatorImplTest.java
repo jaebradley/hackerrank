@@ -3,6 +3,9 @@ package algorithms.utilities;
 import algorithms.interfaces.GreatestCommonDivisorCalculator;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 public class GreatestCommonDivisorCalculatorImplTest {
@@ -35,5 +38,26 @@ public class GreatestCommonDivisorCalculatorImplTest {
 
     gcd = calculator.calculateGreatestCommonDivisor(input, 0);
     assertEquals(gcd, input);
+  }
+
+  @Test
+  public void itShouldThrowWhenThereAreNotTwoValues() {
+    try {
+      calculator.calculateGreatestCommonDivisor(new ArrayList<>());
+    } catch (RuntimeException e) {
+      // expected
+    }
+  }
+
+  @Test
+  public void itShouldReturnGCDForMultipleValues() {
+    final long a = 3;
+    final long b = 6;
+    final long c = 9;
+    final List<Long> values = new ArrayList<>();
+    values.add(a);
+    values.add(b);
+    values.add(c);
+    assertEquals(calculator.calculateGreatestCommonDivisor(values), a);
   }
 }
