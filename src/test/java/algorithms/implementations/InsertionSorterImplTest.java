@@ -3,7 +3,7 @@ package algorithms.implementations;
 import algorithms.interfaces.InsertionSorter;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertArrayEquals;
 
 public class InsertionSorterImplTest {
   final InsertionSorter sort = new InsertionSorterImpl();

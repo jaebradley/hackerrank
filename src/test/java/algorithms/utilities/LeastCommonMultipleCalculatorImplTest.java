@@ -5,9 +5,10 @@ import algorithms.interfaces.LeastCommonMultipleCalculator;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class LeastCommonMultipleCalculatorImplTest {
   final long gcdConstant = 1;
@@ -18,7 +19,7 @@ public class LeastCommonMultipleCalculatorImplTest {
     }
 
     @Override
-    public long calculateGreatestCommonDivisor(final List<Long> values) {
+    public long calculateGreatestCommonDivisor(final Collection<Long> values) {
       return 0;
     }
   };

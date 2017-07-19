@@ -3,7 +3,7 @@ package algorithms.implementations;
 import algorithms.interfaces.AlphabeticalCharacterWeightCalculator;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class AlphabeticalCharacterWeightCalculatorImplTest {
   AlphabeticalCharacterWeightCalculator calculator = new AlphabeticalCharacterWeightCalculatorImpl();
