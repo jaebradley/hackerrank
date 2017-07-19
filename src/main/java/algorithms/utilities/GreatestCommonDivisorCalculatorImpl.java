@@ -2,7 +2,7 @@ package algorithms.utilities;
 
 import algorithms.interfaces.GreatestCommonDivisorCalculator;
 
-import java.util.List;
+import java.util.Collection;
 
 public class GreatestCommonDivisorCalculatorImpl implements GreatestCommonDivisorCalculator {
   @Override
@@ -30,7 +30,7 @@ public class GreatestCommonDivisorCalculatorImpl implements GreatestCommonDiviso
   }
 
   @Override
-  public long calculateGreatestCommonDivisor(final List<Long> values) {
+  public long calculateGreatestCommonDivisor(final Collection<Long> values) {
     if (values.size() < 2) {
       throw new RuntimeException("No values");
     }

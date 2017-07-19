@@ -3,7 +3,7 @@ package algorithms.utilities;
 import algorithms.interfaces.GreatestCommonDivisorCalculator;
 import algorithms.interfaces.LeastCommonMultipleCalculator;
 
-import java.util.List;
+import java.util.Collection;
 
 public class LeastCommonMultipleCalculatorImpl implements LeastCommonMultipleCalculator {
   private final GreatestCommonDivisorCalculator greatestCommonDivisorCalculator;
@@ -18,7 +18,7 @@ public class LeastCommonMultipleCalculatorImpl implements LeastCommonMultipleCal
   }
 
   @Override
-  public long calculateLeastCommonMultiple(final List<Long> values) {
+  public long calculateLeastCommonMultiple(final Collection<Long> values) {
     if (values.size() < 2) {
       throw new RuntimeException("No values");
     }

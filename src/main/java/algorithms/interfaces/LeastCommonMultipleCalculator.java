@@ -1,8 +1,8 @@
 package algorithms.interfaces;
 
-import java.util.List;
+import java.util.Collection;
 
 public interface LeastCommonMultipleCalculator {
   long calculateLeastCommonMultiple(final long a, final long b);
-  long calculateLeastCommonMultiple(final List<Long> values);
+  long calculateLeastCommonMultiple(final Collection<Long> values);
 }
