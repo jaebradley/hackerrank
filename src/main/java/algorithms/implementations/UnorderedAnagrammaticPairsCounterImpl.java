@@ -5,6 +5,11 @@ import algorithms.interfaces.UnorderedAnagrammaticPairsCounter;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem
+ * https://codereview.stackexchange.com/questions/169768/unordered-substring-anagrammatic-pairs
+ */
+
 public class UnorderedAnagrammaticPairsCounterImpl implements UnorderedAnagrammaticPairsCounter {
 
   @Override
