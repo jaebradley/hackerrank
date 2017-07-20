@@ -4,30 +4,27 @@ import algorithms.interfaces.BeautifulNumberValidator;
 
 /**
  * https://www.hackerrank.com/challenges/separate-the-numbers/problem
+ * https://codereview.stackexchange.com/questions/169679/beautiful-number-validator/169705#169705
  */
 
 public class BeautifulNumberValidatorImpl implements BeautifulNumberValidator {
-  @Override
-  public boolean isValidBeautifulNumber(final String s) {
-    if (s.length() < 2) {
-      return false;
+  public boolean isValidBeautifulNumber(String s, long prefix) {
+    for (int i = 0; i < s.length(); ) {
+      String number = String.valueOf(prefix);
+      if (!s.substring(i, i + number.length()).equals(number)) {
+        return false;
+      }
+
+      i += number.length();
+      prefix++;
     }
 
+    return true;
+  }
+
+  public boolean isValidBeautifulNumber(String s) {
     for (int substringSize = 1; substringSize <= s.length() / 2; substringSize++) {
-      long value = Long.parseLong(s.substring(0, substringSize));
-
-      if (value == 0) {
-        break;
-      }
-
-      StringBuilder sb = new StringBuilder();
-      sb.append(value);
-
-      while (sb.length() < s.length() && sb.toString().equals(s.substring(0, sb.length()))) {
-        sb.append(++value);
-      }
-
-      if (sb.toString().equals(s)) {
+      if (isValidBeautifulNumber(s, Long.parseLong(s.substring(0, substringSize)))) {
         return true;
       }
     }
