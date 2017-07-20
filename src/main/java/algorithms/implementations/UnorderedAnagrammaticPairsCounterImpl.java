@@ -1,9 +1,13 @@
 package algorithms.implementations;
 
+import algorithms.interfaces.UnorderedAnagrammaticPairsCounter;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class UnorderedAnagrammaticPairsCounterImpl {
+public class UnorderedAnagrammaticPairsCounterImpl implements UnorderedAnagrammaticPairsCounter {
+
+  @Override
   public int countUnorderedAnagrammaticPairs(String s) {
     int count = 0;
 
@@ -25,6 +29,7 @@ public class UnorderedAnagrammaticPairsCounterImpl {
     return count;
   }
 
+  @Override
   public Map<Character, Integer> getCharacterCounts(String s) {
     Map<Character, Integer> characterCounts = new HashMap<>();
 
