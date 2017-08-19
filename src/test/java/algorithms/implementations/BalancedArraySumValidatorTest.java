@@ -7,18 +7,41 @@ import static org.junit.Assert.*;
 public class BalancedArraySumValidatorTest {
     @Test
     public void itShouldFindBalancedArraySum() {
-        int[] values = new int[] { 1, 1, 1, 3 };
-        assertTrue(BalancedArraySumValidator.isArraySumBalanced(values));
+        assertFalse(BalancedArraySumValidator.isArraySumBalanced(new int[] { 1, 1, 1, 3 }));
     }
 
     @Test
     public void itShouldNotFindBalancedArraySum() {
-        int[] values = new int[] { 1, 1, 1, 1 };
-        assertFalse(BalancedArraySumValidator.isArraySumBalanced(values));
+        assertFalse(BalancedArraySumValidator.isArraySumBalanced(new int[] { 1, 1, 1, 1 }));
     }
 
     @Test
     public void itShouldReturnFalseForEmptyArray() {
-        assertFalse(BalancedArraySumValidator.isArraySumBalanced(new int[] {}));
+        assertTrue(BalancedArraySumValidator.isArraySumBalanced(new int[] {}));
+    }
+
+    @Test
+    public void itShouldReturnTrueForSingleArray() {
+        assertTrue(BalancedArraySumValidator.isArraySumBalanced(new int[] { 3 }));
+    }
+
+    @Test
+    public void itShouldReturnTrue() {
+        assertTrue(BalancedArraySumValidator.isArraySumBalanced(new int[] { 1, 2, 3, 3 }));
+    }
+
+    @Test
+    public void itShouldReturnTrueForMiddle() {
+        assertTrue(BalancedArraySumValidator.isArraySumBalanced(new int[] { 3, 2, 3 }));
+    }
+
+    @Test
+    public void itShouldReturnFalse() {
+        assertFalse(BalancedArraySumValidator.isArraySumBalanced(new int[] { 1, 2, 3 }));
+    }
+
+    @Test
+    public void itShouldReturnTrueForNegatives() {
+        assertTrue(BalancedArraySumValidator.isArraySumBalanced(new int[] { 1, 1, -1, -1 }));
     }
 }
