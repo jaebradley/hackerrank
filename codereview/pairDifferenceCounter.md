@@ -8,11 +8,11 @@ Adapted from [this HackerRank Problem](https://www.hackerrank.com/challenges/pai
 
 1. Given the initial `int` array, sort it.
 2. Now iterate through the indices in the array using a lower index (starting at `0`) and an upper index (starting at `1`)`.
-3. Calculate the difference between the value at the upper index value and the value at the lower index
-  a. If the difference is equal to the target difference, increment the count and increment the upper index.
-  b. If the difference is less than the target difference, increment the upper index. A difference less than the target
+3. Calculate the difference between the value at the upper index value and the value at the lower index.
+  1. If the difference is equal to the target difference, increment the count and increment the upper index.
+  2. If the difference is less than the target difference, increment the upper index. A difference less than the target
      difference implies that the value at the upper index is not large enough.
-  c. If the difference is greater than the target difference, increment the lower index. A difference greater than the
+  3. If the difference is greater than the target difference, increment the lower index. A difference greater than the
      target implies that the value at the lower index is not large enough.
 4. Return the count
 
