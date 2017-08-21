@@ -18,7 +18,7 @@ Adapted from [this HackerRank Problem](https://www.hackerrank.com/challenges/pai
 
 ## Implementation
 
-<!--language: lang-java -->
+<!-- language: lang-java -->
 
     public class PairDifferenceCounter {
         public static int countPairsWithDifference(int[] values, int difference) {
