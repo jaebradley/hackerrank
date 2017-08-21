@@ -16,16 +16,21 @@ public class MissingNumbersIdentifier {
             }
         }
 
+        List<Integer> missingNumbers = new ArrayList<>();
+
         for (Integer value : values2) {
             Integer count = numberCounts.get(value);
             if (count != null) {
                 numberCounts.put(value, count - 1);
+            } else if (!missingNumbers.contains(value)){
+                missingNumbers.add(value);
             }
         }
 
-        List<Integer> missingNumbers = numberCounts.entrySet().stream()
+        missingNumbers.addAll(numberCounts.entrySet().stream()
                 .filter(entry -> entry.getValue() > 0)
-                .map(Map.Entry<Integer, Integer>::getKey).collect(Collectors.toList());
+                .map(Map.Entry<Integer, Integer>::getKey)
+                .collect(Collectors.toList()));
 
         Collections.sort(missingNumbers);
 
