@@ -17,7 +17,7 @@ From [this Hackerrank problem](https://www.hackerrank.com/challenges/minimum-abs
 
 ## Implementation
 
-<!-- language: lang-java --!>
+<!-- language: lang-java -->
     public class MinimumAbsoluteDifferenceIdentifier {
         public static int identifyMinimumAbsoluteDifference(int[] values) {
             if (values.length <= 1) {
