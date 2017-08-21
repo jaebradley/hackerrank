@@ -19,4 +19,10 @@ public class MinimumAbsoluteDifferenceIdentifierTest {
             // expected
         }
     }
+
+    @Test
+    public void itReturnsMinimumAbsoluteDifferenceForTwoElementArray() {
+        final int[] values = new int[] { 3, -7 };
+        assertEquals(10, MinimumAbsoluteDifferenceIdentifier.identifyMinimumAbsoluteDifference(values));
+    }
 }
