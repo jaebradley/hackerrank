@@ -16,7 +16,7 @@ public class PairDifferenceCounter {
         int lowerIndex = 0;
         int upperIndex = 1;
 
-        while (upperIndex < values.length) {
+        while (upperIndex < values.length && lowerIndex < upperIndex) {
             int pairDifference = values[upperIndex] - values[lowerIndex];
 
             if (pairDifference == difference) {
