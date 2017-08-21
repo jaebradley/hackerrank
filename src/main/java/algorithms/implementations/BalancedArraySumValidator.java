@@ -14,30 +14,26 @@ public class BalancedArraySumValidator {
     }
 
     private static boolean isArraySumBalancedFromLeftToRight(int[] values) {
-        if (values.length == 1) {
-            return true;
-        }
-
-        int leftToRightLeftSum = 0;
-        int leftToRightRightSum = 0;
+        int leftSum = 0;
+        int rightSum = 0;
 
         for (int i = 0; i < values.length; i++) {
             int j = values.length - 1 - i;
 
             if (i < j) {
-                leftToRightRightSum += values[j];
+                rightSum += values[j];
             } else if (i > j) {
-                leftToRightRightSum -= values[i];
+                rightSum -= values[i];
             }
 
-            if (leftToRightRightSum == leftToRightLeftSum) {
+            if (rightSum == leftSum) {
                 return true;
             }
 
-            leftToRightLeftSum += values[i];
+            leftSum += values[i];
         }
 
-        return leftToRightRightSum == leftToRightLeftSum;
+        return rightSum == leftSum;
     }
 
     private static int[] reverse(int[] values) {
