@@ -18,3 +18,7 @@
   * Given an array of N integers, find and print the minimum absolute difference between any two elements in the array.
   * [Implementation](https://github.com/jaebradley/hackerrank/blob/master/src/main/java/algorithms/implementations/MinimumAbsoluteDifferenceIdentifier.java)
   * [HackerRank](https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array)
+* [Pair Difference Counter](https://github.com/jaebradley/hackerrank/blob/master/codereview/pairDifferenceCounter.md)
+  * Given `N` integers, count the number of pairs of integers whose difference is `K`
+  * [Implementation](https://github.com/jaebradley/hackerrank/blob/master/src/main/java/algorithms/implementations/PairDifferenceCounter.java)
+  * [HackerRank](https://www.hackerrank.com/challenges/pairs/problem)
