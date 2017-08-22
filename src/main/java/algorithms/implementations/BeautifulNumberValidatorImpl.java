@@ -5,6 +5,14 @@ import algorithms.interfaces.BeautifulNumberValidator;
 /**
  * https://www.hackerrank.com/challenges/separate-the-numbers/problem
  * https://codereview.stackexchange.com/questions/169679/beautiful-number-validator/169705#169705
+ *
+ *  A numeric string, `s`, is beautiful if it can be split into a sequence of two or more positive integers, `a1`, `a2`, `a3`, etc., satisfying the following conditions
+ *
+ *    Each element in the sequence is one greater than the previous element
+ *    No element contains a leading zero
+ *    The sequence cannot be rearranged
+ *
+ *  For example, `1234` (`1`, `2`, `3`, `4`), `91011` (`9`, `10`, `11`), `99100` (`99`, `100`) are all beautiful numbers
  */
 
 public class BeautifulNumberValidatorImpl implements BeautifulNumberValidator {
