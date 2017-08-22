@@ -2,12 +2,12 @@
 
 Extended from [this HackerRank problem](https://www.hackerrank.com/challenges/sherlock-and-array).
 
-> Given an array A of length n, determine if there exists an element in the array such that the sum of the elements on
+> Given an array `A` of length `n`, determine if there exists an element in the array such that the sum of the elements on
 its left is equal to the sum of the elements on its right.
 
 If there are no elements to the left/right, then the sum is considered to be zero.
 
-For example, `[ 1, 1, 1, 2 ]`, the sum of elements to the left and right of index `2`are equal.
+For example, `[ 1, 1, 1, 2 ]`, the sum of elements to the left and right of index `2` are equal.
 
 ## Approach
 
