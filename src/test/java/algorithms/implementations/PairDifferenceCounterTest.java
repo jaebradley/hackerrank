@@ -16,4 +16,10 @@ public class PairDifferenceCounterTest {
         final int[] values = new int[] { 1, 2, 3, 4 };
         assertEquals(0, PairDifferenceCounter.countPairsWithDifference(values, -1111111));
     }
+
+    @Test
+    public void itShouldReturnACountOfThreeForRepeatingPairs() {
+        int[] values = new int[] { 1, 3, 3, 3 };
+        assertEquals(3, PairDifferenceCounter.countPairsWithDifference(values, 2));
+    }
 }
