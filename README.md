@@ -22,3 +22,8 @@
   * Given `N` integers, count the number of pairs of integers whose difference is `K`
   * [Implementation](https://github.com/jaebradley/hackerrank/blob/master/src/main/java/algorithms/implementations/PairDifferenceCounter.java)
   * [HackerRank](https://www.hackerrank.com/challenges/pairs/problem)
+* [Unordered Anagrammatic Pairs Counter](https://github.com/jaebradley/hackerrank/blob/master/codereview/unorderedAnagrammaticPairsCounter.md)
+  * In other words, find the number of unordered pairs of substrings of `S` that are anagrams of each other
+  * [Implementation](https://github.com/jaebradley/hackerrank/blob/master/src/main/java/algorithms/implementations/UnorderedAnagrammaticPairsCounterImpl.java)
+  * [HackerRank](https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem)
+  * [CodeReview](https://codereview.stackexchange.com/questions/169768/unordered-substring-anagrammatic-pairs)
