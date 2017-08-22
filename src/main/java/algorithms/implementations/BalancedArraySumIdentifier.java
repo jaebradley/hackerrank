@@ -10,7 +10,7 @@ package algorithms.implementations;
  */
 
 public class BalancedArraySumIdentifier {
-    public static boolean isArraySumBalanced(int[] values) {
+    public static boolean isBalanced(int[] values) {
         int leftToRightLeftSum = 0;
         int leftToRightRightSum = 0;
 
