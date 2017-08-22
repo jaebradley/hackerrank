@@ -27,7 +27,7 @@ left-to-right and right-to-left evaluations in the same loop.
 <!-- language: lang-java -->
 
     public class BalancedArraySumIdentifier {
-        public static boolean isArraySumBalanced(int[] values) {
+        public static boolean isBalanced(int[] values) {
             int leftToRightLeftSum = 0;
             int leftToRightRightSum = 0;
 
