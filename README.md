@@ -5,6 +5,12 @@
   * For example, the weight of `b` is `2`
   * [Implementation](https://github.com/jaebradley/hackerrank/blob/master/src/main/java/algorithms/implementations/AlphabeticalCharacterWeightCalculatorImpl.java)
   * [HackerRank](https://www.hackerrank.com/challenges/weighted-uniform-string)
+* [Balanced Array Sum Identifier](https://github.com/jaebradley/hackerrank/blob/master/codereview/balancedArraySumIdentifier.md)
+  * Given an array A of length n, determine if there exists an element in the array such that the sum of the elements on
+    its left is equal to the sum of the elements on its right.
+  * [Implementation](https://github.com/jaebradley/hackerrank/blob/b16a885baecb8fa6cd5bf25c608e8f489a091cc4/src/main/java/algorithms/implementations/BalancedArraySumIdentifier.java)
+  * [HackerRank](https://www.hackerrank.com/challenges/sherlock-and-array)
+  * [CodeReview](https://codereview.stackexchange.com/questions/173704/for-an-array-check-if-an-index-exists-where-the-sum-of-the-elements-to-the-left)
 * [Beautiful Number Validator](https://github.com/jaebradley/hackerrank/blob/master/codereview/beautifulNumberValidator.md)
   * A numeric string, `s`, is beautiful if it can be split into a sequence of two or more positive integers, `a1`, `a2`, `a3`, etc., satisfying the following conditions
     * Each element in the sequence is one greater than the previous element
