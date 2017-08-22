@@ -7,7 +7,7 @@ Instead of printing `YES` or `NO`, I just wanted to return a `boolean`.
 
 ## Implementation
 
-<! -- language: lang-java -->
+<!-- language: lang-java -->
 
     public class BeautifulNumberValidator {
       public static boolean isValidBeautifulNumber(String s) {
