@@ -14,3 +14,7 @@
   * [Implementation](https://github.com/jaebradley/hackerrank/blob/master/src/main/java/algorithms/implementations/BeautifulNumberValidatorImpl.java)
   * [HackerRank](https://www.hackerrank.com/challenges/separate-the-numbers/problem)
   * [CodeReview](https://codereview.stackexchange.com/questions/169679/beautiful-number-validator/169705#169705)
+* [Minimum Absolute Difference Identifier](https://github.com/jaebradley/hackerrank/blob/master/codereview/minimumAbsoluteDifferenceIdentifier.md)
+  * Given an array of N integers, find and print the minimum absolute difference between any two elements in the array.
+  * [Implementation](https://github.com/jaebradley/hackerrank/blob/master/src/main/java/algorithms/implementations/MinimumAbsoluteDifferenceIdentifier.java)
+  * [HackerRank](https://www.hackerrank.com/challenges/minimum-absolute-difference-in-an-array)
